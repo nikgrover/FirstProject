@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmsPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/smsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sending sms"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="25dp"/>
+        <ImageButton
+            android:id="@id/picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sms"
+            android:layout_below="@id/smsTitle"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/picture"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="87dp"
+            android:layout_marginRight="87dp"
+            android:ems="10"
+            android:hint="enter number"
+            android:inputType="number"
+            android:textAllCaps="false"
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/SMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Phone"
+            android:layout_alignStart="@id/Phone"
+            android:layout_alignLeft="@id/Phone"
+            android:layout_alignEnd="@id/picture"
+            android:layout_alignRight="@id/picture"
+            android:layout_marginStart="-14dp"
+            android:layout_marginLeft="-14dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:hint="Enter Text"
+            android:textColorHint="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_below="@id/SMS"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
